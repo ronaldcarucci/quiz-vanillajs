@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quiz Web App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div>Quiz</div>
+    </header>
+    <div id="game-bord">
+      <div id="theme-selector" style="display:none !important;">
+      </div>
+      <div id="quiz" style="display:none !important;">
+        <div id="score-zone">
+          <span>1/10 - 0</span> pts</div>
+        <div id="quiz-zone">
+          <div id="question">
+          </div>
+          <div id="propositions">
+            <div class="proposition" data-proposition="a"></div>
+            <div class="proposition" data-proposition="b"></div>
+            <div class="proposition" data-proposition="c"></div>
+            <div class="proposition" data-proposition="d"></div>
+          </div>
+          <div id="actions">
+            <button id="choice-validation">Valider ma réponse</button>
+            <button id="choice-abord">Annuler la selection</button>
+          </div>
+          <div id="next-or-restart">
+            <button id="choice-new-question">Question suivante</button>
+            <button id="choice-restart">Recommencer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+html {
+  background-color: #073481;
+}
+
+body {
+  margin : 0;
+}
+
+body * {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+header {
+  background-color: #040f22;
+  color: #ffffff;
+  box-shadow: #ff0000 1px 2px 3px;
+}
+
+header > div {
+  max-width: fit-content;
+  margin: 0 auto;
+  font-size: x-large;
+  font-weight: 700;
+  padding: 1rem;
+  text-shadow: #ff0000 2px 2px 2px;
+}
+
+#game-board, #game-board * {
+  color: white;
+}
+
+#theme-selector, #quiz {
+  transition: display 1px;
+}
+
+#score-zone {
+  color: white;
+  width: calc(100vw - 24px);
+  text-align: right;
+  margin-top: 24px;
+  font-weight: bold;
+}
+
+#quiz-zone, #theme-selector {
+  width: 500px;
+  margin: 54px auto auto;
+  padding: 12px;
+}
+
+#question {
+  font-size: x-large;
+  text-align: center;
+  color: white;
+  margin-bottom: 24px;
+}
+
+#propositions, #theme-selector {
+  margin: 10px auto 10px auto;
+  display: grid;
+  column-gap: 25px;
+  row-gap: 25px;
+  grid-template-columns: 50% 50%;
+}
+
+#propositions .proposition, #theme-selector > * {
+  text-align: center;
+  padding: 12px;
+  color: white;
+  border-radius: 20px;
+  box-shadow: black 3px 3px 7px;
+  font-size: large;
+  transition: all 0.75s;
+}
+
+#propositions .proposition.chosen {
+  background-color: lightgray;  
+  box-shadow: grey 3px 3px 7px;
+  color: black;
+  transition: all 0.75s;
+}
+
+#propositions .proposition.correct {
+  background-color: green;  
+  box-shadow: grey 3px 3px 7px;
+  color: black;
+  transition: all 0.75s;
+}
+
+#propositions .proposition.incorrect {
+  background-color: red;  
+  box-shadow: grey 3px 3px 7px;
+  color: black;
+  transition: all 0.75s;
+}
+
+#actions, #next-or-restart {
+  margin: 30px auto 10px auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 25px;
+  row-gap: 25px;
+  visibility: hidden;
+}
+
+:is(#actions, #next-or-restart) > * {
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+  color: black;
+  border-radius: 20px;
+  box-shadow: black 3px 3px 7px;
+  font-size: large;
+  transition: all 0.75s;
+}

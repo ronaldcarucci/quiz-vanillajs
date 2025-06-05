@@ -27,7 +27,7 @@ header > div {
   text-shadow: #ff0000 2px 2px 2px;
 }
 
-#game-board, #game-board * {
+#game-board, #game-board *, #final-score {
   color: white;
 }
 
@@ -43,7 +43,7 @@ header > div {
   font-weight: bold;
 }
 
-#quiz-zone, #theme-selector {
+#quiz-zone, #theme-selector, #final-score {
   width: 500px;
   margin: 54px auto auto;
   padding: 12px;

@@ -117,7 +117,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 800);
     }
     else {
-      alert('Final Score');
+      document.querySelector('#final-points').innerText = points;
+      document.querySelector('#quiz').style.display = 'none';
+      document.querySelector('#final-score').style.display = 'block';
     }
   });
 

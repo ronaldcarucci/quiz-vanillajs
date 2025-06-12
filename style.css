@@ -32,7 +32,7 @@ header > div {
 }
 
 #theme-selector, #quiz {
-  transition: display 1px;
+  transition: display 1s;
 }
 
 #score-zone {
